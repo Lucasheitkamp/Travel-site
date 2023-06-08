@@ -4,8 +4,10 @@
  "const text = document.querySelector(".animation");"
  1. The first line of code selects an html variable and assigns it to a text.
 <br>
+<br>
 "const strText = text.textContent;"
 2. the second line retrieves the text content and assigns it to the variable strText.
+<br>
 <br>
 "const splitText = strText.split("");"
 3. the third line splits all of the text into individual characters and assigns them to the "variable splitText"
