@@ -1,0 +1,108 @@
+
+<html>
+<head>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Turkey</title>
+    <style>
+   .container {
+  position: relative;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.image {
+  display: block;
+  width: 66%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 66%;
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+span {
+    opacity: 0;
+    -webkit-text-fill-color: rgb(252, 252, 252);
+    transition: all 1s ease;
+
+}
+
+span.fade {
+    opacity: 1;
+    -webkit-text-fill-color: red;
+}
+
+h2{
+    -webkit-text-fill-color: red;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <h1 class="animation">Explore Turkey</h1>
+    <img src="Turkey.jpg" class="Greece">
+    </div>
+<div class="wrapper">
+    <img src="Turkey1.jpg" class="Greece1">
+        <div class="text-box">
+            <h2 class> Summer in Turkey</h2>
+            <p class>
+                Turkey is a captivating destination that truly comes alive during the summer months. With its rich history, stunning landscapes, and vibrant culture, it offers an unforgettable summer experience. Visitors can bask in the glorious sunshine along the country's picturesque beaches, such as the breathtaking coastline of the Turquoise Coast or the idyllic shores of Bodrum. The warm Mediterranean waters invite travelers to swim, snorkel, and indulge in various water sports. Inland, Turkey boasts a diverse range of landscapes, from the otherworldly terraces of Pamukkale to the awe-inspiring Cappadocia region with its fairy chimneys and hot air balloon rides. Additionally, the ancient ruins of Ephesus and Troy offer glimpses into the country's fascinating past. With a myriad of delicious cuisine, lively bazaars, and hospitable locals, Turkey in the summer is a true feast for the senses.
+
+            </p>
+        </div>
+</div>
+    <script src="app.js"></script>
+
+    
+<h2> Popular destinations</h2>
+      <div class="container">
+        <img src="Istanbul.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Istanbul</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="Bodrum.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Bodrum</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="Antalya.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Antalya</div>
+        </div>
+      </div>
+    <ul>
+      <a href="index.html">Greece</a>
+      <a href="Portugal.html">Portugal</a>
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portugal</title>
+    <style>
+   .container {
+  position: relative;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.image {
+  display: block;
+  width: 66%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(34, 213, 88);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 66%;   
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+span {
+    opacity: 0;
+    -webkit-text-fill-color: rgb(252, 252, 252);    
+    transition: all 1s ease;
+
+}
+
+span.fade {
+    opacity: 1;
+    -webkit-text-fill-color: rgb(78, 216, 75);
+}
+
+h2{
+    -webkit-text-fill-color: rgb(78, 216, 75);
+}
+    </style>
+</head>
+<body>
+    <div>
+    <h1 class="animation">Explore Portugal</h1>
+    <img src="Portugal.jpg" class="Greece">
+    </div>
+<div class="wrapper">
+    <img src="Portugal1.jpg" class="Greece1">
+        <div class="text-box">
+            <h2 class> Summer in Portugal</h2>
+            <p class>
+                
+Portugal in the summer is a captivating destination that enthralls visitors with its stunning landscapes, vibrant culture, and warm Mediterranean climate. With its golden sandy beaches, crystal-clear waters, and breathtaking coastal cliffs, Portugal offers a paradise for sunseekers and beach lovers. The charming coastal towns, such as Lagos and Albufeira in the Algarve region, come alive during this season, welcoming tourists with open arms. The bustling cities of Lisbon and Porto are vibrant and bustling, with lively street festivals, outdoor concerts, and delicious food markets showcasing the country's rich culinary heritage. From exploring historic castles and picturesque vineyards to indulging in fresh seafood and sipping on port wine, Portugal in the summer offers an unforgettable experience for travelers seeking a perfect blend of relaxation and adventure.
+            </p>
+        </div>
+</div>
+    <script src="app.js"></script>
+
+    
+<h2> Popular destinations</h2>
+      <div class="container">
+        <img src="Porto.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Porto</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="Lisbon.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Lisbon</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="Azores.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Azores</div>
+        </div>
+      </div>
+      <ul>
+      <a href="index.html">Greece</a>
+      <a href="Turkey.html">Turkey</a>
+    </ul>
+</body>
+</html>
